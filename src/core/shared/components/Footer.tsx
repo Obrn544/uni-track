@@ -7,7 +7,7 @@ export const Footer = () => {
         Created with 💜 by{' '}
         <Link
           href='https://github.com/Obrn544'
-          className='font-medium text-blue-600 transition-colors hover:underline'
+          className='bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text font-medium text-transparent transition-colors hover:from-blue-600 hover:to-purple-600'
           rel='noopener noreferrer'
           target='_blank'
         >
