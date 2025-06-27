@@ -19,9 +19,6 @@ export const metadata: Metadata = {
     'UniTrack helps students organize courses, manage assignments, collaborate on projects, and track academic progress—all in one beautiful, intuitive platform.',
   keywords: ['UniTrack', 'Student Organization', 'University Management'],
   authors: [{ name: 'UniTrack' }],
-  icons: {
-    icon: '/logo.ico',
-  },
   openGraph: {
     title: 'UniTrack',
     description:
@@ -31,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'UniTrack',
     images: [
       {
-        url: '/logo.ico',
+        url: '/logo.png',
         width: 1200,
         height: 630,
         alt: 'UniTrack',
