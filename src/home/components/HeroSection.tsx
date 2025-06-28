@@ -30,7 +30,7 @@ export const HeroSection = () => {
             </p>
 
             <div className='flex flex-col items-center justify-center gap-4 sm:flex-row'>
-              <Link href='/login'>
+              <Link href='/auth/login'>
                 <button className='flex transform cursor-pointer items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:scale-105 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl'>
                   <Icon
                     icon='material-symbols:arrow-right-alt-rounded'

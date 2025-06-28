@@ -1,7 +1,7 @@
 import { Header } from '@/home/components/Header';
 import { HeroSection } from '@/home/components/HeroSection';
 import { FeaturesSection } from '@/home/components/FeaturesSection';
-import { Footer } from '@/home/components/Footer';
+import { Footer } from '@/core/shared/components/Footer';
 
 export default function Home() {
   return (

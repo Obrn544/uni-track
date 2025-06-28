@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <footer className='bg-blue-50 py-4 text-center text-sm'>
+    <footer className='py-4 text-center text-sm'>
       <p>
         Created with 💜 by{' '}
         <Link

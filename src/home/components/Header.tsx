@@ -12,14 +12,14 @@ export const Header = () => {
 
             <nav className='flex items-center space-x-4'>
               <Link
-                href='/login'
+                href='/auth/login'
                 className='text-secondary hover:text-foreground font-medium transition-colors'
               >
                 Sign In
               </Link>
-              <Link href='/login'>
+              <Link href='/auth/register'>
                 <button className='cursor-pointer rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-2 text-sm font-medium text-white transition-colors hover:from-blue-600 hover:to-purple-700'>
-                  Get Started
+                  Sign Up
                 </button>
               </Link>
             </nav>
