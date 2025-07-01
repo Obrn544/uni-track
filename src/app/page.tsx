@@ -12,7 +12,9 @@ export default function Home() {
 
       <FeaturesSection />
 
-      <Footer />
+      <div className='py-4'>
+        <Footer />
+      </div>
     </div>
   );
 }

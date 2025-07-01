@@ -6,10 +6,10 @@ export const Logo = () => {
     <>
       <Link href='/' className='flex items-center space-x-3'>
         <div className='rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 p-2'>
-          <Icon icon='akar-icons:book' color='#ffffff' width={24} height={24} />
+          <Icon icon='tabler:users' color='#ffffff' width={24} height={24} />
         </div>
         <span className='bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-2xl font-bold text-transparent'>
-          UniTrack
+          Tandemly
         </span>
       </Link>
     </>

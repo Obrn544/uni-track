@@ -58,7 +58,7 @@ export const RegisterForm = () => {
         label='Fullname'
         name='fullname'
         type='text'
-        placeholder='John Doe'
+        placeholder='Enter your fullname'
         register={register}
         errors={errors.fullname}
         pattern={{
@@ -79,7 +79,7 @@ export const RegisterForm = () => {
         label='Email'
         name='email'
         type='email'
-        placeholder='student@university.edu'
+        placeholder='Enter your email address'
         register={register}
         errors={errors.email}
         pattern={{

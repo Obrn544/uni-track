@@ -1,6 +1,6 @@
 services:
-  uni-track-db:
-    container_name: uni-track-database
+  tandemly-db:
+    container_name: tandemly-database
     image: postgres:16.2
     restart: always
     volumes:

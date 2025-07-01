@@ -9,7 +9,7 @@ export default function LoginPage() {
     <>
       <AuthHeader
         title='Welcome back'
-        description='Please enter your email address and password to sign in to your UniTrack account.'
+        description='Sign in to continue collaborating with your team'
       />
 
       <main className='space-y-6 px-8 pb-8'>
@@ -17,7 +17,7 @@ export default function LoginPage() {
           <Field
             label='Email'
             type='email'
-            placeholder='student@university.edu'
+            placeholder='Enter your email address'
           />
 
           <Field
@@ -39,7 +39,7 @@ export default function LoginPage() {
         </form>
 
         <div className='pt-4 text-center'>
-          <p className='text-gray-600'>
+          <p className='text-secondary'>
             Don't have an account?{' '}
             <Link
               href='/auth/register'

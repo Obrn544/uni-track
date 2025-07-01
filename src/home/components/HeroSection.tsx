@@ -13,20 +13,20 @@ export const HeroSection = () => {
         <div className='relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
           <div className='space-y-8 text-center'>
             <button className='w-fit rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-200'>
-              🎓 The future of student organization
+              🤝 Collaborative productivity made simple
             </button>
 
             <h1 className='text-foreground text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl'>
-              Stay on top of your{' '}
+              Plan better.{' '}
               <span className='bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent'>
-                university life
+                Together.
               </span>
             </h1>
 
             <p className='text-secondary mx-auto max-w-3xl text-xl leading-relaxed'>
-              UniTrack helps students organize courses, manage assignments,
-              collaborate on projects, and track academic progress—all in one
-              beautiful, intuitive platform.
+              Tandemly brings teams and individuals together to organize tasks,
+              plan group projects, and sync calendars—all in one beautiful,
+              collaborative platform.
             </p>
 
             <div className='flex flex-col items-center justify-center gap-4 sm:flex-row'>
@@ -37,7 +37,7 @@ export const HeroSection = () => {
                     width={20}
                     height={20}
                   />
-                  Get Started Free
+                  Start Collaborating
                 </button>
               </Link>
               <button className='flex cursor-pointer items-center gap-2 rounded-xl border-gray-200 bg-white/70 px-8 py-3 text-lg font-semibold backdrop-blur-sm hover:bg-gray-50'>
@@ -53,7 +53,7 @@ export const HeroSection = () => {
                   <div className='h-8 w-8 rounded-full border-2 border-white bg-gradient-to-r from-green-400 to-blue-500'></div>
                   <div className='h-8 w-8 rounded-full border-2 border-white bg-gradient-to-r from-purple-400 to-pink-500'></div>
                 </div>
-                <span>10,000+ students</span>
+                <span>10,000+ users</span>
               </div>
               <div className='flex items-center space-x-1'>
                 <Icon icon='fluent-emoji-flat:star' width={16} height={16} />

@@ -7,8 +7,8 @@ export default function RegisterPage() {
   return (
     <>
       <AuthHeader
-        title='Create your account'
-        description='Please enter your details to create your UniTrack account.'
+        title='Join your team'
+        description='Create your account and start collaborating today'
       />
 
       <main className='space-y-6 px-8 pb-8'>

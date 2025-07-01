@@ -1,42 +1,33 @@
-import { Icon } from '@iconify/react';
-
 import { Feature } from './Feature';
 
 const Features = [
   {
-    icon: 'lets-icons:book-open-duotone-line',
-    title: 'Course Management',
+    icon: 'mynaui:check-square-one',
+    title: 'Task Management',
     description:
-      'Organize all your courses, track progress, and never miss an important deadline or assignment.',
+      'Create, assign, and track tasks with your team. Set priorities, deadlines, and monitor progress in real-time.',
     background: 'from-blue-500 to-cyan-500',
   },
   {
-    icon: 'mynaui:check-square-one',
-    title: 'Task & Assignment Tracking',
+    icon: 'tabler:users',
+    title: 'Team Collaboration',
     description:
-      'Create, organize, and track all your assignments with due dates, priorities, and progress indicators.',
+      'Form groups, collaborate on projects, and communicate seamlessly with built-in chat and file sharing.',
     background: 'from-green-500 to-emerald-500',
   },
   {
-    icon: 'lucide:users',
-    title: 'Study Groups',
+    icon: 'tabler:calendar',
+    title: 'Shared Calendars',
     description:
-      'Form study groups, collaborate on projects, and communicate with classmates in real-time.',
+      'Sync schedules with your team, plan meetings, and never miss important deadlines with smart reminders.',
     background: 'from-purple-500 to-pink-500',
   },
   {
-    icon: 'tabler:calendar',
-    title: 'Smart Calendar',
+    icon: 'octicon:goal-24',
+    title: 'Goal Tracking',
     description:
-      'Integrated calendar with deadline reminders, class schedules, and important academic dates.',
+      'Set team goals, track milestones, and celebrate achievements together with visual progress indicators.',
     background: 'from-orange-500 to-red-500',
-  },
-  {
-    icon: 'gg:trending',
-    title: 'Progress Analytics',
-    description:
-      'Track your academic performance with detailed analytics and insights to improve your study habits.',
-    background: 'from-indigo-500 to-purple-500',
   },
 ];
 
@@ -47,11 +38,11 @@ export const FeaturesSection = () => {
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
           <div className='mb-16 space-y-4 text-center'>
             <h2 className='text-foreground text-3xl font-bold lg:text-4xl'>
-              Everything you need to succeed
+              Organize tasks and groups in sync
             </h2>
             <p className='text-secondary mx-auto max-w-2xl text-xl'>
-              Powerful features designed specifically for university students to
-              stay organized and achieve their academic goals.
+              Powerful features designed for teams and individuals who want to
+              stay organized and achieve their goals together.
             </p>
           </div>
 

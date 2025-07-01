@@ -14,11 +14,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'UniTrack',
-  description:
-    'UniTrack helps students organize courses, manage assignments, collaborate on projects, and track academic progress—all in one beautiful, intuitive platform.',
-  keywords: ['UniTrack', 'Student Organization', 'University Management'],
-  authors: [{ name: 'UniTrack' }],
+  title: 'Tandemly',
+  description: 'Plan better. Together.',
+  keywords: [
+    'Collaborative task manager',
+    'Organize group projects',
+    'Online task planner',
+    'Shared calendar',
+    'Teamwork',
+    'Tasks with reminders',
+    'Productivity app',
+    'Trello alternative',
+    'Academic planning',
+    'Simple project management',
+  ],
 };
 
 export default function RootLayout({
