@@ -1,10 +1,19 @@
+import { auth } from '@/auth.config';
+import { redirect } from 'next/navigation';
+
 import { Footer } from '@/core/shared/components/Footer';
 
-export default function AuthLayout({
+export default async function AuthLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const session = await auth();
+
+  if (session?.user) {
+    redirect('/dashboard');
+  }
+
   return (
     <div className='flex min-h-screen flex-col items-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 px-4 pt-4'>
       <div className='pointer-events-none absolute inset-0 overflow-hidden'>

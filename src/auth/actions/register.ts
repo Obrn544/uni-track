@@ -2,6 +2,7 @@
 
 import bcrypt from 'bcrypt';
 import prisma from '@/core/config/prisma';
+import { signIn } from '@/auth.config';
 
 export const register = async (
   email: string,
@@ -11,7 +12,7 @@ export const register = async (
   try {
     const emailExists = await prisma.user.findUnique({
       where: {
-        email,
+        email: email.toLowerCase(),
       },
     });
 
@@ -24,7 +25,7 @@ export const register = async (
 
     await prisma.user.create({
       data: {
-        email,
+        email: email.toLowerCase(),
         password: bcrypt.hashSync(password, 10),
         fullname,
       },
@@ -36,6 +37,27 @@ export const register = async (
     };
   } catch (error) {
     console.log('[REGISTER ERROR]', error);
+
+    return {
+      ok: false,
+      message: 'Something went wrong',
+    };
+  }
+};
+
+export const login = async (email: string, password: string) => {
+  try {
+    await signIn('credentials', {
+      email: email.toLowerCase(),
+      password,
+    });
+
+    return {
+      ok: true,
+      message: 'User logged in successfully',
+    };
+  } catch (error) {
+    console.log('[LOGIN ERROR]', error);
 
     return {
       ok: false,

@@ -1,5 +1,6 @@
 import { FieldError, UseFormRegister } from 'react-hook-form';
 import { Icon } from '@iconify/react';
+import clsx from 'clsx';
 
 import { RegisterFormInputs } from '@/auth/components/RegisterForm';
 
@@ -46,7 +47,10 @@ export const RegisterField = ({
         id={name}
         type={type}
         placeholder={placeholder}
-        className='h-12 rounded-xl border-2 border-gray-300 bg-white/70 p-4 backdrop-blur-sm transition-all duration-200 focus:border-purple-500 focus:ring-2 focus:ring-blue-50 focus:outline-none'
+        className={clsx(
+          'h-12 rounded-xl border-2 border-gray-300 bg-white/70 p-4 backdrop-blur-sm transition-all duration-200 focus:border-purple-500 focus:ring-2 focus:ring-blue-50 focus:outline-none',
+          errors && 'border-red-500 focus:border-red-500 focus:ring-red-50',
+        )}
         required
         {...register(name, {
           required: {

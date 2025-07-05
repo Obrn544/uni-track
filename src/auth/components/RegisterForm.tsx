@@ -2,7 +2,7 @@
 
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import { register as registerAction } from '@/auth/actions/register';
+import { login, register as registerAction } from '@/auth/actions/register';
 import { RegisterField } from '@/auth/components/RegisterField';
 import { SubmitButton } from '@/auth/components/SubmitButton';
 
@@ -17,7 +17,6 @@ export const RegisterForm = () => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { errors },
     setError,
     watch,
@@ -33,11 +32,9 @@ export const RegisterForm = () => {
   const password = watch('password');
 
   const onSubmit: SubmitHandler<RegisterFormInputs> = async (data) => {
-    const registerResponse = await registerAction(
-      data.email,
-      data.password,
-      data.fullname,
-    );
+    const { email, password, fullname } = data;
+
+    const registerResponse = await registerAction(email, password, fullname);
 
     if (registerResponse.message === 'email') {
       setError('email', { type: 'manual', message: 'Email already exists' });
@@ -49,7 +46,9 @@ export const RegisterForm = () => {
       return;
     }
 
-    reset();
+    await login(email, password);
+
+    window.location.replace('/dashboard');
   };
 
   return (
